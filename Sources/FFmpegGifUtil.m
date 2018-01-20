@@ -55,4 +55,12 @@
         [FFmpegGifUtil video:videoPath toQualityHighGif:gifPath imageWidth:width framesPerSecond:frames maxDuration:duration];
     }
 }
+
++ (void)gif:(NSString *)gifPath toVideo:(NSString *)videoPath
+{
+//    ffmpeg -f gif -i test_QualityHigh.gif -c:v libx264 -f mp4 a.mp4
+    NSArray * cmdArray = @[@"ffmpeg", @"-f", @"gif", @"-i", gifPath, @"-c:v", @"libx264", @"-f", @"mp4", videoPath];
+    [[FFmpegCMD shared] cmdprocess:cmdArray];
+}
+
 @end
