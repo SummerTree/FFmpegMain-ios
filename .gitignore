@@ -10,3 +10,9 @@ build/
 DerivedData/
 
 
+thin
+scratch
+ffmpeg-2.6.2
+FFmpegMainDemo.xcworkspace/xcuserdata
+FFmpeg-iOS
+Demo/FFmpegMainDemo/FFmpegMainDemo.xcodeproj/xcuserdata

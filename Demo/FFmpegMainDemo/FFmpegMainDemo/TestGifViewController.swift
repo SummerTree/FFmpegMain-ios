@@ -29,7 +29,10 @@ class TestGifViewController: TestViewController {
     }
 
     func testQualityHigh() {
-        let inputFile = self.filePath(fileName: "test.mp4")
+        let inputFile = self.filePath(fileName: "resource2.mp4")
+        
+        print(FileManager.default.fileExists(atPath: inputFile))
+        
         let outputFile = self.filePath(fileName: "test_QualityHigh.gif")
         self.doFFmpegProcess(action: { (Void) in
             FFmpegGifUtil.video(inputFile, toGif: outputFile)
@@ -39,7 +42,7 @@ class TestGifViewController: TestViewController {
     }
     
     func testQualityLow() {
-        let inputFile = self.filePath(fileName: "test.mp4")
+        let inputFile = self.filePath(fileName: "resource2.mp4")
         let outputFile = self.filePath(fileName: "test_QualityLow.gif")
         self.doFFmpegProcess(action: { (Void) in
             FFmpegGifUtil.video(inputFile, toQualityLowGif: outputFile, imageWidth: 320, framesPerSecond: 8, maxDuration: 20)

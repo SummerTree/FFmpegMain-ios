@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F41F2C91E9FCFF3005B69CB /* FFmpegMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */; };
-		0F41F2CA1E9FD00A005B69CB /* FFmpegMain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0F59C3111F79F3520072EC90 /* Files in Resources */ = {isa = PBXBuildFile; fileRef = 0F59C3101F79F3520072EC90 /* Files */; };
 		0F688C691FCD7AB200CF7BF2 /* TestVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F688C681FCD7AB200CF7BF2 /* TestVideoViewController.swift */; };
 		0F688C6B1FCD7B1E00CF7BF2 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F688C6A1FCD7B1E00CF7BF2 /* TestViewController.swift */; };
@@ -17,6 +15,8 @@
 		0FA2A1F21E655E4A00F1617D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F01E655E4A00F1617D /* Main.storyboard */; };
 		0FA2A1F41E655E4A00F1617D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F31E655E4A00F1617D /* Assets.xcassets */; };
 		0FA2A1F71E655E4A00F1617D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA2A1F51E655E4A00F1617D /* LaunchScreen.storyboard */; };
+		E5F744522012DAD60059F986 /* FFmpegMain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F744532012DAD60059F986 /* FFmpegMain.framework */; };
+		E5F744542012F8EB0059F986 /* FFmpegMain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E5F744532012DAD60059F986 /* FFmpegMain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0F41F2CA1E9FD00A005B69CB /* FFmpegMain.framework in Embed Frameworks */,
+				E5F744542012F8EB0059F986 /* FFmpegMain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,7 +34,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FFmpegMain.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/FFmpegMainDemo-fksaldxcrprxnehbwggxlyslwvxz/Build/Products/Debug-iphoneos/FFmpegMain.framework"; sourceTree = "<group>"; };
 		0F59C3101F79F3520072EC90 /* Files */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Files; sourceTree = "<group>"; };
 		0F688C681FCD7AB200CF7BF2 /* TestVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVideoViewController.swift; sourceTree = "<group>"; };
 		0F688C6A1FCD7B1E00CF7BF2 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		0FA2A1F31E655E4A00F1617D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA2A1F61E655E4A00F1617D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA2A1F81E655E4A00F1617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5F744532012DAD60059F986 /* FFmpegMain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FFmpegMain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F41F2C91E9FCFF3005B69CB /* FFmpegMain.framework in Frameworks */,
+				E5F744522012DAD60059F986 /* FFmpegMain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +95,7 @@
 		0FA2A1FE1E655EA400F1617D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0F41F2C81E9FCFF3005B69CB /* FFmpegMain.framework */,
+				E5F744532012DAD60059F986 /* FFmpegMain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,7 +133,7 @@
 				TargetAttributes = {
 					0FA2A1E81E655E4A00F1617D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = G5YJVZL9SU;
+						DevelopmentTeam = 6CQUNG333J;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -300,7 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = G5YJVZL9SU;
+				DEVELOPMENT_TEAM = 6CQUNG333J;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -319,7 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G5YJVZL9SU;
+				DEVELOPMENT_TEAM = 6CQUNG333J;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

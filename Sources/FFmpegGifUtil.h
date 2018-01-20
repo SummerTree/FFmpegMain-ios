@@ -24,4 +24,5 @@ typedef NS_ENUM(NSInteger, FFmpegGIFQuality) {
 
 //视频转GIF，指定参数
 + (void) video: (NSString*) videoPath toGif: (NSString*)gifPath quality: (FFmpegGIFQuality)quality imageWidth: (int)width framesPerSecond: (int)frames maxDuration: (int) duration;
+
 @end
